@@ -1,0 +1,31 @@
+package.json / package-lock.json
+cd 디렉토리
+npm i 
+
+npm LTS버전(18.16.0) 설치 : https://nodejs.org/ko/download
+
+mkdir my-blog
+cd my-blog
+npm init -y
+npm i next react react-dom
+=> node_modules 폴더 생성
+
+mkdir pages
+index.js 생성
+npm run dev
+=> 오류시 node_modules 폴더, package-lock.json 삭제후 재실행
+
+npm run build
+npm start
+=> build 하면 .next 폴더에 파일 생성됨
+
+======
+npm i @sanity/cli -g
+=> npm create sanity@latest -- --template get-started --project ti6zoj0h --dataset production --provider google
+sanity login
+
+======
+npx create-next-app my-blog
+npm run dev
+
+npm i @sanity/client
